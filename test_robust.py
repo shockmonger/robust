@@ -29,5 +29,5 @@ def test_complex():
 def test_zero():
 	num_list=[0,2,4,6]
 	obs = mean(num_list)
-	exp = 0
+	exp = 3
 	assert obs == exp
