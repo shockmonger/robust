@@ -40,7 +40,10 @@
 
 def mean(num_list):
 	try:
-		return sum(num_list)/len(num_list)
+		mean = sum(num_list)/len(num_list)
+		if isinstance(mean,complex):
+			return NotImplemented
+		return mean
 	except ZeroDivisionError as detail:
 		msg = 'why have you given me an empty list?'
 		raise ZeroDivisionError(detail.__str__()+msg)
